@@ -9,4 +9,7 @@ fviz_pca_biplot(pc,geom.ind = "point",fill.ind = pca$class_name ,col.ind = "blac
                 xlab = "PC1", ylab = "PC2",
                 addEllipses = TRUE, ellipseCA=TRUE,col.var = "contrib",gradient.cols = c("red","blue"),arrows = TRUE,
                 legend.title =list(fill= "Groups",color ="contrib"),alpha ="contrib")+theme_set(theme_bw()) + theme( plot.background = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+tiff("pca_plot.tiff",units = "in", width = 6, height = 5, res = 600) 
+setwd("C:\\Users\\DELL\\Desktop\\MPRO-plot") 
+tiff("plot_1200dpi.tiff", res = 1200)                
 
